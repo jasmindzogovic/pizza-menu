@@ -2,11 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 function App() {
-  return <h1>Hello React!</h1>;
+  return (
+    <div>
+      <h1>Hello React!</h1>
+      <Pizza />
+    </div>
+  );
+}
+
+function Pizza() {
+  return <h2>Pizza</h2>;
 }
 
 // React version 18
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
